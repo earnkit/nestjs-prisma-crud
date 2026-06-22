@@ -67,11 +67,29 @@ npm install
 
 ## Environment Variables
 
-Create a `.env` file in the root project.
+This project uses environment variables for database connection and application configuration.
+
+Create a `.env` file in the root project by copying `.env.example`.
+
+```bash
+cp .env.example .env
+```
+
+Example:
 
 ```env
-DATABASE_URL="postgresql://username:password@localhost:5432/database_name"
+DATABASE_URL="postgresql://username:password@localhost:5432/database_name?schema=public"
+PORT=3000
 ```
+
+### Environment Variables Description
+
+| Variable | Description |
+|---|---|
+| `DATABASE_URL` | PostgreSQL connection string used by Prisma |
+| `PORT` | Application port. Default is `3000` |
+
+> Do not commit the real `.env` file to GitHub because it may contain sensitive information.
 
 ## Run Database with Docker
 
