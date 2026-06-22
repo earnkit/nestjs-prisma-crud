@@ -10,6 +10,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    env:
+      DATABASE_URL: postgresql://earn:password@localhost:5432/nest_db?schema=public
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
