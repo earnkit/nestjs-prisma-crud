@@ -169,6 +169,16 @@ npm run test:cov
 * `PATCH /category/:id`
 * `DELETE /category/:id`
 
+## API Documentation
+
+This project includes Swagger API documentation.
+
+After running the project, open:
+
+http://localhost:3000/api
+
+Swagger provides a list of available endpoints and allows testing requests directly from the browser.
+
 ## Notes
 
 This project was created as part of backend practice for learning:
